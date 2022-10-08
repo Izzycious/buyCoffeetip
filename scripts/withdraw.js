@@ -14,7 +14,10 @@ async function main() {
 
     //get the node connection and wallet connection.
 
-    const provider = new hre.ethers.providers.AlchemyProvider("goerli", process.env.GOERLI_API_KEY);
+    const provider = new hre.ethers.providers.AlchemyProvider(
+        "goerli", 
+        process.env.GOERLI_API_KEY
+        );
 
     //Ensuring that the signer is the same as the deployer
     //else script will fail
